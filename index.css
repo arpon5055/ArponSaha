@@ -342,3 +342,12 @@ hr{
 #contact a{
     color: white;
 }
+#right{
+    text-align: center;
+   
+}
+#right h5{
+      color: rgba(255, 253, 253, 0.11);
+       font-size: 20px;
+       -webkit-text-stroke: 1px white;
+}
