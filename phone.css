@@ -48,8 +48,8 @@ hr{
  transform: scale(1.1);
 }
 #intro-p{
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     background-color: aliceblue;
     border: 5px solid rgb(119, 119, 119);
