@@ -73,6 +73,7 @@ hr{
     box-shadow: 0 4px 30px gray;
     position: relative;
     top: -70px;
+    
 }
 #navbar{
     width: 80vw;
@@ -179,6 +180,14 @@ hr{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+#detail li{
+    font-size: 15px;
+    color: #2f1343;
+    font-weight: bold;
+}
+#detail li a{
+    color: black;
 }
 #writing{
     text-align: center;
