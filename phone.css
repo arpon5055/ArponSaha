@@ -44,9 +44,9 @@ hr{
      font-size: 13px;
 
 }   
-#intro-w:hover{
+/*#intro-w:hover{
  transform: scale(1.1);
-}
+}*/
 #intro-p{
     height: 100px;
     width: 100px;
@@ -86,8 +86,8 @@ hr{
     border-radius: 10px;
     position: fixed;
     top: 10px;
-    left: 35px;
-
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1;
     display: flex;
     justify-content: space-evenly;
@@ -143,9 +143,9 @@ hr{
     background-image: url(83598a5ab3f5371e7662b565836c0c39.jpg);
     background-size: cover;
 }
-#card:hover{
+/*#card:hover{
     transform: scale(1.1);
-}
+}*/
 #profile-b{
     width: 90%;
     height: 150px;
@@ -200,7 +200,7 @@ hr{
     padding: 10px;
       background-color: rgba(240, 248, 255, 0.091);
 }
-#writing:hover{transform: scale(1.2);}
+/*#writing:hover{transform: scale(1.2);}*/
 
 #skill{
      height: 35px;
@@ -235,10 +235,10 @@ hr{
     backdrop-filter: blur(10px);
     border-radius: 10px;
 }
-.box:hover{
+/*.box:hover{
     transform: scale(1.1);
     font-weight: bold;
-}
+}*/
 #box1{
     background: transparent;
     background-image: url(website.png);
@@ -306,6 +306,118 @@ hr{
     
     color: white;
 }
+#experience{
+    height: 35px;
+    width: 150px;
+    font-size: 25px;
+    background:transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px gray;
+    border: 1px solid gray;
+    border-radius: 5px;
+    align-content: center;
+    margin: auto;
+    margin-top: 50px;
+   background:linear-gradient(150deg, rgb(58, 0, 85,0.5),rgb(30, 10, 104,0.5),rgb(97, 0, 0,0.5));
+    padding: 10px;
+}
+#exp{
+    height: 1150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#exp-1{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   gap: 5px;
+   font-size: 15px;
+   text-align: center;
+}
+
+#exp1-p{
+      width: 90%;
+    height: 250px;
+    background : transparent;
+    background-size: cover;
+    border-radius: 10px;
+  /*  border: 1px solid rgb(48, 48, 48);*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 0px;
+   
+}
+.exp-photo{
+    width: 130px;
+    height: 100px;
+    border: 1px solid rgb(48, 48, 48);
+    border-radius: 10px;
+    background-color: #00f0ff;
+}
+#photo-1{ background-image: url(exp1.jpg);background-size: cover;}
+#photo-2{ background-image: url(exp2.jpg);background-size: cover;}
+#photo-3{ background-image: url(exp3.jpg);background-size: cover;}
+#photo-4{ background-image: url(exp4.jpg);background-size: cover;}
+#exp-2{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   gap: 5px;
+   font-size: 15px;
+   text-align: center;
+}
+
+#exp2-p{
+      width: 90%;
+    height: 250px;
+    background : transparent;
+    background-size: cover;
+    border-radius: 10px;
+  /*  border: 1px solid rgb(48, 48, 48);*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 0px;
+   
+}
+.exp-photo{
+    width: 130px;
+    height: 100px;
+    border: 1px solid rgb(48, 48, 48);
+    border-radius: 10px;
+    background-color: #00f0ff;
+}
+#photo-5{ background-image: url(exp5.jpg);background-size: cover;}
+#photo-6{ background-image: url(exp6.jpg);background-size: cover;}
+#photo-7{ background-image: url(exp7.jpg);background-size: cover;}
+#photo-8{ background-image: url(exp8.jpg);background-size: cover;}
+#about{
+    height: 35px;
+    width: 88px;
+    font-size: 25px;
+    background:transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px gray;
+    border: 1px solid gray;
+    border-radius: 5px;
+    align-content: center;
+    margin: auto;
+     margin-top: 50px;
+     background:linear-gradient(150deg, rgb(58, 0, 85,0.5),rgb(30, 10, 104,0.5),rgb(97, 0, 0,0.5));
+    padding: 10px;
+}
 #about{
     height: 35px;
     width: 88px;
@@ -336,7 +448,7 @@ hr{
     font-size: 12px;
     text-align: center;
 }
-#five{
+#ABOUT{
     height: 400px;
 }
 #contact{

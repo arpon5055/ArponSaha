@@ -10,6 +10,7 @@ body {
   background-blend-mode: overlay;
   color: white;
   font-family: sans-serif;
+  
 }
 hr{
     background-color: rgb(48, 48, 48);
@@ -89,22 +90,26 @@ hr{
     border-radius: 10px;
     position: fixed;
     top: 10px;
-    left: 90px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 20px;
+    font-size: 22px;
+  
 }
 #navbar a{
     text-decoration: none;
-    color: aliceblue;
+    background: linear-gradient(to right, #00f0ff, #6e00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: larger;
     text-transform: capitalize;
 }
 #navbar a:hover{
     font-weight: bold;
-    text-decoration: underline;
+   /* text-decoration: underline;*/
 }
 #home{
     height: 30px;
@@ -141,7 +146,7 @@ hr{
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    background-image: url(83598a5ab3f5371e7662b565836c0c39.jpg);
+    background-image: url(card.webp);
     background-size: cover;
 }
 /*#card:hover{
@@ -169,15 +174,15 @@ hr{
     margin-top: 10px;
     background-image: url(arponback.jpg);
     background-size: cover;
-    border: 1px solid rgb(9, 9, 75);
+    border: 1px solid rgb(141, 141, 214);
     box-shadow: 0px 0px 20px  #1f0439;
 }
 #detail{
     width: 260px;
-    height: 290px;
+    height: 260px;
     background: transparent;
     backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 50px gray;
+    box-shadow: 0px 0px 50px rgb(0, 0, 0);
     border-radius: 10px;
     border: 1px solid gray;
     
@@ -190,8 +195,9 @@ hr{
 }
 #detail li{
     font-size: 15px;
-    color: #2f1343;
+    color: #be6fff;
     font-weight: bold;
+   /* -webkit-text-stroke: 1px white;*/
 }
 #detail li a{
     color: black;
@@ -206,8 +212,9 @@ hr{
     box-shadow: 0px 0px 20px gray;
     border-radius: 10px;
     border: 1px solid gray;
+   
     padding: 10px;
-      background-color: rgba(240, 248, 255, 0.091);
+    background-color: rgba(240, 248, 255, 0.091);
 }
 /*#writing:hover{transform: scale(1.2);}*/
 
@@ -240,6 +247,8 @@ hr{
     border: 1px solid gray;
     box-shadow: 0 0 10px gray;
     backdrop-filter: blur(10px);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 /*.box:hover{
     transform: scale(1.1);
@@ -312,6 +321,102 @@ hr{
     
     color: white;
 }
+#experience{
+    height: 35px;
+    width: 150px;
+    font-size: 25px;
+    background:transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px gray;
+    border: 1px solid gray;
+    border-radius: 5px;
+    align-content: center;
+    margin: auto;
+    margin-top: 50px;
+   background:linear-gradient(150deg, rgb(58, 0, 85,0.5),rgb(30, 10, 104,0.5),rgb(97, 0, 0,0.5));
+    padding: 10px;
+}
+#exp{
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#exp-1{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   gap: 5px;
+   font-size: 15px;
+   text-align: center;
+}
+
+#exp1-p{
+      width: 90%;
+    height: 250px;
+    background : transparent;
+    background-size: cover;
+    border-radius: 10px;
+  /*  border: 1px solid rgb(48, 48, 48);*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 0px;
+   
+}
+.exp-photo{
+    width: 130px;
+    height: 100px;
+    border: 1px solid rgb(48, 48, 48);
+    border-radius: 10px;
+    background-color: #00f0ff;
+}
+#photo-1{ background-image: url(exp1.jpg);background-size: cover;}
+#photo-2{ background-image: url(exp2.jpg);background-size: cover;}
+#photo-3{ background-image: url(exp3.jpg);background-size: cover;}
+#photo-4{ background-image: url(exp4.jpg);background-size: cover;}
+#exp-2{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   gap: 5px;
+   font-size: 15px;
+   text-align: center;
+}
+
+#exp2-p{
+      width: 90%;
+    height: 250px;
+    background : transparent;
+    background-size: cover;
+    border-radius: 10px;
+  /*  border: 1px solid rgb(48, 48, 48);*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 0px;
+   
+}
+.exp-photo{
+    width: 130px;
+    height: 100px;
+    border: 1px solid rgb(48, 48, 48);
+    border-radius: 10px;
+    background-color: #00f0ff;
+}
+#photo-5{ background-image: url(exp5.jpg);background-size: cover;}
+#photo-6{ background-image: url(exp6.jpg);background-size: cover;}
+#photo-7{ background-image: url(exp7.jpg);background-size: cover;}
+#photo-8{ background-image: url(exp8.jpg);background-size: cover;}
 #about{
     height: 35px;
     width: 88px;
@@ -327,6 +432,7 @@ hr{
      background:linear-gradient(150deg, rgb(58, 0, 85,0.5),rgb(30, 10, 104,0.5),rgb(97, 0, 0,0.5));
     padding: 10px;
 }
+
 #about-w{
     width: 400px;
     height: 200px;
@@ -341,7 +447,7 @@ hr{
     font-size: 25px;
     text-align: center;
 }
-#five{
+#ABOUT{
     height: 400px;
 }
 #contact{
