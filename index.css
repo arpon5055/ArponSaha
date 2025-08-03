@@ -53,6 +53,7 @@ hr{
     
     
 }
+
 #navbar{
     width: 80vw;
     height: 60px;
@@ -87,17 +88,44 @@ hr{
     height: 30px;
     width: 88px;
     font-size: 25px;
-    background:transparent;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 10px gray;
-    border: 1px solid gray;
+  
     border-radius: 5px;
     align-content: center;
     margin: auto;
     margin-top: 50px;
-     background:linear-gradient(150deg, rgb(58, 0, 85,0.5),rgb(30, 10, 104,0.5),rgb(97, 0, 0,0.5));
+     background:linear-gradient(150deg, rgb(58, 0, 85),rgb(30, 10, 104),rgb(97, 0, 0));
     padding: 10px;
+    position: relative;
 }
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+@keyframes spin{
+    from{--angle:0deg}
+    to{--angle:360deg}
+}
+#home::after,#home::before{
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   translate: -50% -50%;
+   width: 100%;
+   height: 100%;
+   background-image: conic-gradient(from var(--angle),blue,red,rgb(65, 7, 80),rgb(2, 6, 68),blue);
+   padding: 5px;
+   z-index: -1;
+   border-radius: 10px;
+   animation: 2s spin linear infinite;
+   z-index: -1;
+}
+#home::before{
+    filter: blur(500px);
+    opacity: 1;
+}
+
 #id{
     height: 500px;
    /* background-color: #1f0439;*/
@@ -194,16 +222,35 @@ hr{
      height: 35px;
     width: 88px;
     font-size: 25px;
-     background:linear-gradient(150deg, rgb(58, 0, 85,0.5),rgb(30, 10, 104,0.5),rgb(97, 0, 0,0.5));
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 10px gray;
-    border: 1px solid gray;
+    position: relative;
     border-radius: 5px;
     align-content: center;
     margin: auto;
      margin-top: 50px;
      padding: 10px;
+    background:linear-gradient(150deg, rgb(58, 0, 85),rgb(30, 10, 104),rgb(97, 0, 0));
+  
 }
+#skill::after,#skill::before{
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   translate: -50% -50%;
+   width: 100%;
+   height: 100%;
+   background-image: conic-gradient(from var(--angle),blue,red,rgb(65, 7, 80),rgb(2, 6, 68),blue);
+   padding: 5px;
+   z-index: -1;
+   border-radius: 10px;
+   animation: 2s spin linear infinite;
+   z-index: -1;
+}
+#skill::before{
+    filter: blur(500px);
+    opacity: 1;
+}
+
 #skill-b{
     height: 500px;
    
@@ -253,16 +300,32 @@ hr{
     height: 35px;
     width: 150px;
     font-size: 25px;
-    background:transparent;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 10px gray;
-    border: 1px solid gray;
     border-radius: 5px;
     align-content: center;
     margin: auto;
     margin-top: 50px;
-   background:linear-gradient(150deg, rgb(58, 0, 85,0.5),rgb(30, 10, 104,0.5),rgb(97, 0, 0,0.5));
+    background:linear-gradient(150deg, rgb(58, 0, 85),rgb(30, 10, 104),rgb(97, 0, 0));
     padding: 10px;
+    position: relative;
+}
+#project::after,#project::before{
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   translate: -50% -50%;
+   width: 100%;
+   height: 100%;
+   background-image: conic-gradient(from var(--angle),blue,red,rgb(65, 7, 80),rgb(2, 6, 68),blue);
+   padding: 5px;
+   z-index: -1;
+   border-radius: 10px;
+   animation: 2s spin linear infinite;
+   z-index: -1;
+}
+#project::before{
+    filter: blur(500px);
+    opacity: 1;
 }
 #project-b{
      height: 500px;
@@ -297,16 +360,36 @@ hr{
     height: 35px;
     width: 150px;
     font-size: 25px;
-    background:transparent;
+ /*   background:transparent;
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 10px gray;
-    border: 1px solid gray;
+    border: 1px solid gray;*/
     border-radius: 5px;
     align-content: center;
     margin: auto;
     margin-top: 50px;
-   background:linear-gradient(150deg, rgb(58, 0, 85,0.5),rgb(30, 10, 104,0.5),rgb(97, 0, 0,0.5));
+   background:linear-gradient(150deg, rgb(58, 0, 85),rgb(30, 10, 104),rgb(97, 0, 0));
     padding: 10px;
+    position: relative;
+}
+#experience::after,#experience::before{
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   translate: -50% -50%;
+   width: 100%;
+   height: 100%;
+   background-image: conic-gradient(from var(--angle),blue,red,rgb(65, 7, 80),rgb(2, 6, 68),blue);
+   padding: 5px;
+   z-index: -1;
+   border-radius: 10px;
+   animation: 2s spin linear infinite;
+   z-index: -1;
+}
+#experience::before{
+    filter: blur(500px);
+    opacity: 1;
 }
 #exp{
     height: 550px;
@@ -393,16 +476,36 @@ hr{
     height: 35px;
     width: 88px;
     font-size: 25px;
-    background:transparent;
+  /*  background:transparent;
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 10px gray;
-    border: 1px solid gray;
+    border: 1px solid gray;*/
     border-radius: 5px;
     align-content: center;
     margin: auto;
      margin-top: 50px;
-     background:linear-gradient(150deg, rgb(58, 0, 85,0.5),rgb(30, 10, 104,0.5),rgb(97, 0, 0,0.5));
+     background:linear-gradient(150deg, rgb(58, 0, 85),rgb(30, 10, 104),rgb(97, 0, 0));
     padding: 10px;
+    position: relative;
+}
+#about::after,#about::before{
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   translate: -50% -50%;
+   width: 100%;
+   height: 100%;
+   background-image: conic-gradient(from var(--angle),blue,red,rgb(65, 7, 80),rgb(2, 6, 68),blue);
+   padding: 5px;
+   z-index: -1;
+   border-radius: 10px;
+   animation: 2s spin linear infinite;
+   z-index: -1;
+}
+#about::before{
+    filter: blur(500px);
+    opacity: 1;
 }
 
 #about-w{
