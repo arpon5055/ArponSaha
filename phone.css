@@ -21,43 +21,18 @@ hr{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: transparent;
-    height: 500px;
-  /*  background-color: rgba(240, 248, 255, 0.091);*/
+   
+    height: 250px;
+    background-image:url('Arpon.jpg');
+    background-size: cover;
+    background-position: center;
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
     backdrop-filter: blur(10px);
-  /*  border: 1px solid rgb(48, 48, 48);*/
     border-radius: 5px;
 }
-#intro-w{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    background: transparent;
-    backdrop-filter: blur(10px);
-    height: 150px;
-    width: 200px;
-    border: 1px solid gray;
-    border-radius: 10px;
-    text-transform: capitalize;
-    box-shadow: 0 4px 30px gray;
-     background-color: rgba(240, 248, 255, 0.091);
-     font-size: 13px;
 
-}   
-/*#intro-w:hover{
- transform: scale(1.1);
-}*/
-#intro-p{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: aliceblue;
-    border: 5px solid rgb(119, 119, 119);
-    background-image: url(profile2.jpg);
-    background-size: cover;
-    box-shadow: 0px 0px 10px gray;
 
-}
 #name{
     display: flex;
     justify-content: center;
