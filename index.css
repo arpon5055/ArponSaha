@@ -6,7 +6,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(90deg,#000000, #2f1343, #000000);
+  background: linear-gradient(-110deg,#000000, #2f1343, #000000);
   background-blend-mode: overlay;
   color: white;
   font-family: sans-serif;
@@ -93,9 +93,10 @@ hr{
     align-content: center;
     margin: auto;
     margin-top: 50px;
-     background:linear-gradient(150deg, rgb(58, 0, 85),rgb(30, 10, 104),rgb(97, 0, 0));
+    background:linear-gradient(150deg, rgb(58, 0, 85),rgb(30, 10, 104),rgb(97, 0, 0));
     padding: 10px;
     position: relative;
+    box-shadow: 0 0 10px gray;
 }
 @property --angle{
     syntax: "<angle>";
@@ -230,7 +231,7 @@ hr{
      margin-top: 50px;
      padding: 10px;
     background:linear-gradient(150deg, rgb(58, 0, 85),rgb(30, 10, 104),rgb(97, 0, 0));
-  
+     box-shadow: 0 0 10px gray;
 }
 #skill::after,#skill::before{
    content: "";
@@ -269,16 +270,50 @@ hr{
     backdrop-filter: blur(10px);
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    overflow-Y: scroll;
+    scrollbar-width: none;
+
 }
-/*.box:hover{
-    transform: scale(1.1);
-    font-weight: bold;
-}*/
 #box1{
-    background: transparent;
-    background-image: url(website.png);
-    background-size: cover;
+    height: 450px;
+    width: 300px;
+     background-color: rgba(240, 248, 255, 0.091);
+    border: 1px solid gray;
+    box-shadow: 0 0 10px gray;
+    backdrop-filter: blur(10px);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow-y: hidden;  
+}
+
+    @keyframes scrollVertical {
+    0% {
+        transform: translateY(10%);
+    }
+    25%{
+        transform: translateY(-100%)
+    }
+    50%{
+        transform: translateY(-200%)
+    }
+    75%{
+        transform: translateY(-100%)
+    }
+    100%{
+        
+        transform: translateY(10%)
+    
+    }
+
+    
    
+}
+
+#box1 img{
+   width: 300px;
+   height: 400px;
+   animation: scrollVertical 15s linear infinite;
+   object-fit: cover;
 }
 #box2{
      display: flex;
@@ -308,6 +343,7 @@ hr{
     background:linear-gradient(150deg, rgb(58, 0, 85),rgb(30, 10, 104),rgb(97, 0, 0));
     padding: 10px;
     position: relative;
+      box-shadow: 0 0 10px gray;
 }
 #project::after,#project::before{
    content: "";
@@ -361,10 +397,8 @@ hr{
     height: 35px;
     width: 150px;
     font-size: 25px;
- /*   background:transparent;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 10px gray;
-    border: 1px solid gray;*/
+
+    box-shadow: 0 0 10px gray;
     border-radius: 5px;
     align-content: center;
     margin: auto;
@@ -389,6 +423,7 @@ hr{
    z-index: -1;
 }
 #experience::before{
+   
     filter: blur(500px);
     opacity: 1;
 }
@@ -408,7 +443,7 @@ hr{
    gap: 5px;
    font-size: 15px;
    text-align: center;
-   overflow: hidden;
+ 
 }
 
 #exp1-p{
@@ -424,8 +459,11 @@ hr{
     align-items: center;
     gap: 5px;
     margin-top: 0px;
+    
    
 }
+
+
 .exp-photo{
     width: 130px;
     height: 100px;
@@ -461,7 +499,7 @@ hr{
     align-items: center;
     gap: 5px;
     margin-top: 0px;
-   
+  
 }
 .exp-photo{
     width: 130px;
@@ -478,10 +516,7 @@ hr{
     height: 35px;
     width: 88px;
     font-size: 25px;
-  /*  background:transparent;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 10px gray;
-    border: 1px solid gray;*/
+    box-shadow: 0 0 10px gray;
     border-radius: 5px;
     align-content: center;
     margin: auto;
@@ -519,7 +554,7 @@ hr{
     margin-top: 10px;
     border-top-left-radius:10px ;
     border-bottom-right-radius:10px ;
-    padding: 10px;
+    padding: 50px;
     border: 1px solid rgb(48, 48, 48);
     font-size: 25px;
     text-align: center;
