@@ -53,7 +53,7 @@ hr{
     padding: 10px;
 }
 #navbar{
-    width: 90vw;
+    width: 95vw;
     height: 60px;
     background:transparent;
     backdrop-filter: blur(10px);
@@ -67,7 +67,7 @@ hr{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 12px;
+    font-size: 10px;
 }
 #navbar a{
     text-decoration: none;
