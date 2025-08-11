@@ -107,7 +107,7 @@ hr{
 }
 #card{
     width: 300px;
-    height: 450px;
+    height: 490px;
     background: blur(10px);
     border: 1px solid gray;
     border-radius: 10px;
@@ -116,7 +116,7 @@ hr{
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    background-image: url(card.webp);
+   /* background-image: url(card.webp);*/
     background-size: cover;
 }
 /*#card:hover{
@@ -152,11 +152,13 @@ hr{
     height: 290px;
     background: transparent;
     backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 50px gray;
+    box-shadow: 0px 0px 50px rgb(0, 0, 0);
     border-radius: 10px;
-    border: 1px solid gray;
-    
-    color: black;
+     background: linear-gradient(to right, #00f0ff, #6e00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+   
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -175,6 +177,7 @@ hr{
     border: 1px solid gray;
     padding: 10px;
       background-color: rgba(240, 248, 255, 0.091);
+      overflow: hidden;
 }
 /*#writing:hover{transform: scale(1.2);}*/
 
@@ -253,10 +256,11 @@ hr{
      box-shadow: 0 0 10px gray;
 }
 #project-b{
-     height: 500px;
+     height: 1500px;
    
   /*  border: 1px solid rgb(48,48,48);*/
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -435,6 +439,9 @@ hr{
     border: 1px solid rgb(48, 48, 48);
     font-size: 12px;
     text-align: center;
+      background: linear-gradient(to right, #00f0ff, #6e00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #ABOUT{
     height: 400px;
@@ -454,6 +461,9 @@ hr{
     margin: auto;
     margin-top: 10px;
     font-size: 15px;
+      background: linear-gradient(to right, #00f0ff, #6e00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #contact a{
     color: white;

@@ -1,0 +1,14 @@
+ @media (min-width: 600px) and (max-width: 1024px){
+#writing{
+    width: 200px;
+     overflow: scroll;
+    scrollbar-width: none;
+}
+#project-b{
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+}
