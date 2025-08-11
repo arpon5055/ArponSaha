@@ -551,6 +551,22 @@ hr{
     justify-content: space-evenly;
     align-items: center;
     gap: 50px;
+   
+   
+}
+@keyframes flip{
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+  /*  100%{
+        transform: rotateY(360deg);
+    }
+   /* to{
+        transform: rotateY(360deg);
+    }*/
 }
 #bio1{
     height: 450px;
@@ -560,6 +576,11 @@ hr{
     transform-style: preserve-3d;
     transition: all 1s ease-in-out;
     box-shadow: 0 0 50px gray;
+    animation: flip  linear ;
+   
+    animation-timeline: view();
+    animation-range: entry 58% cover 60%;
+   
 }
 #bio1front{
     width: 100%;
