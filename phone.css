@@ -393,6 +393,18 @@ hr{
      background:linear-gradient(150deg, rgb(58, 0, 85),rgb(30, 10, 104),rgb(97, 0, 0));
     padding: 10px;
 }
+#bio1{
+    height: 350px;
+    width: 300px;
+    border-radius: 10px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    box-shadow: 0 0 50px gray;
+}
+#bio1back{
+    font-size: 20px;
+}
 #about{
     height: 35px;
     width: 88px;
