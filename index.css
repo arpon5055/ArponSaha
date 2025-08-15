@@ -170,6 +170,10 @@ hr{
     text-align: center;
     
 }
+#detail p i a{
+    
+    text-decoration: white underline;
+}
 
 #writing{
     text-align: center;
@@ -243,7 +247,7 @@ background-image: conic-gradient(from var(--angle),rgb(85, 85, 85),rgb(20, 16, 1
 
 }
 #box1{
-    height: 450px;
+    height: 350px;
     width: 300px;
      background-color: rgba(240, 248, 255, 0.091);
     border: 1px solid gray;
@@ -546,6 +550,7 @@ background-image: conic-gradient(from var(--angle),rgb(85, 85, 85),rgb(20, 16, 1
     height: 450px;
     width: 400px;
     border-radius: 10px;
+    margin-bottom: 10px;
     position: relative;
     transform-style: preserve-3d;
     transition: all 1s ease-in-out;
@@ -603,6 +608,7 @@ background-image: conic-gradient(from var(--angle),rgb(85, 85, 85),rgb(20, 16, 1
     height: 450px;
     width: 400px;
     border-radius: 10px;
+     margin-bottom: 10px;
     position: relative;
     transform-style: preserve-3d;
     transition: all 1s ease-in-out;
